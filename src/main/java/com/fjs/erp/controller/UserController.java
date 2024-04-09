@@ -3,6 +3,7 @@ package com.fjs.erp.controller;
 import com.fjs.erp.datasource.entities.User;
 import com.fjs.erp.service.user.UserService;
 import com.fjs.erp.utils.BaseResponseInfo;
+import com.fjs.erp.utils.ExceptionCodeConstants;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
@@ -33,7 +34,7 @@ public class UserController {
     public BaseResponseInfo login(@RequestParam(value = "loginName", required = false) String loginName,
                                   @RequestParam(value = "password", required = false) String password,
                                   HttpServletRequest request)throws Exception {
-        logger.info("============用户登录 login 方法调用开始==============");
+        logger.info("**************用户登录 login 方法开始*****************");
         String msgTip = "";
         User user=null;
         BaseResponseInfo res = new BaseResponseInfo();
@@ -112,7 +113,7 @@ public class UserController {
             }
             res.code = 200;
             res.data = data;
-            logger.info("===============用户登录 login 方法调用结束===============");
+            logger.info("**************用户登录 login 方法结束*****************");
         } catch(Exception e){
             e.printStackTrace();
             logger.error(e.getMessage());

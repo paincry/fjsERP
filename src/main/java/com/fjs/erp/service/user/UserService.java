@@ -3,6 +3,7 @@ package com.fjs.erp.service.user;
 import com.fjs.erp.datasource.entities.User;
 import com.fjs.erp.datasource.mappers.UserMapper;
 import jakarta.annotation.Resource;
+import com.fjs.erp.datasource.entities.UserExample;
 
 import java.util.List;
 

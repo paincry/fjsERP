@@ -47,6 +47,14 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+<!--     java对象和json的相互转化   -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.31</version>
+        </dependency>
+
+
 
 
     </dependencies>
