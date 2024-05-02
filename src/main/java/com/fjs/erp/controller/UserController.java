@@ -1,6 +1,10 @@
 package com.fjs.erp.controller;
 
+import com.fjs.erp.constans.BusinessConstants;
+import com.fjs.erp.datasource.entities.Tenant;
 import com.fjs.erp.datasource.entities.User;
+import com.fjs.erp.service.log.LogService;
+import com.fjs.erp.service.tenant.TenantService;
 import com.fjs.erp.service.user.UserService;
 import com.fjs.erp.utils.BaseResponseInfo;
 import com.fjs.erp.utils.ExceptionCodeConstants;
@@ -28,6 +32,11 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    @Resource
+    private LogService logService;
+
+    @Resource
+    private TenantService tenantService;
 
 
     @PostMapping(value = "/login")

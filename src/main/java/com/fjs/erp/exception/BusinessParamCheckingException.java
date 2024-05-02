@@ -5,7 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Getter
-public class BusinessParamCheckingException extends Exception{
+public class BusinessParamCheckingException extends Exception {
+
     private static final long serialVersionUID = 1L;
     private int code;
     private String reason;
